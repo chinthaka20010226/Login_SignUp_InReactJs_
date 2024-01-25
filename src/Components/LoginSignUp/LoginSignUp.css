@@ -116,3 +116,8 @@
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
 }
+
+.gray {
+    color: #676767;
+    background-color: #EAEAEA;
+}
