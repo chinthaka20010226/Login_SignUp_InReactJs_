@@ -6,7 +6,7 @@ import email_icon from '../Assets/email.png';
 import password_icon from '../Assets/password.png';
 
 function LoginSignUp(){
-    const[action,setAction] = useState("Sign Up");
+    const[action,setAction] = useState("Login");
 
     return(
         <div className='container'>
@@ -32,8 +32,8 @@ function LoginSignUp(){
                 Lost Password? <span>Click Here!</span>
             </div>
             <div className='submit-container'>
-                <div className="submit">Sign Up</div>
-                <div className="submit">Login</div>
+                <div className={action === "Login" ? "submit gray" : "submit"}>Sign Up</div>
+                <div className={action === "Sign Up" ? "submit gray" : "submit"}>Login</div>
             </div>
         </div>
     )
