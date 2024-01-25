@@ -9,7 +9,7 @@ function LoginSignUp(){
     return(
         <div className='container'>
             <div className='header'>
-                <div className='header-text'>Login</div>
+                <div className='header-text'>Sign Up</div>
                 <div className='header-underline'></div>
             </div>
             <div className='inputs'>
