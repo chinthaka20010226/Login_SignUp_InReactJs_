@@ -15,7 +15,7 @@ function LoginSignUp(){
                 <div className='header-underline'></div>
             </div>
             <div className='inputs'>                                                              
-                {action ==="Login" ? <div></div> : 
+                {action === "Login" ? <div></div> :
                 <div className='input'>
                     <img src={name_icon} alt='input-name'></img>
                     <input type='text' placeholder='Name'></input>
