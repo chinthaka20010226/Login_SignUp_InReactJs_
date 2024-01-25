@@ -15,13 +15,10 @@ function LoginSignUp(){
                 <div className='header-underline'></div>
             </div>
             <div className='inputs'>
-                {action==="Login"? <div></div> :
-                    <div className='input'>
-                        <img src={name_icon} alt='input-name'></img>
-                        <input type='text' placeholder='Name'></input>
+                <div className='input'>
+                    <img src={name_icon} alt='input-name'></img>
+                    <input type='text' placeholder='Name'></input>
                     </div>
-                }
-                
                 <div className='input'>
                     <img src={email_icon} alt='input-email'></img>
                     <input type='email' placeholder='Email'></input>
@@ -35,8 +32,8 @@ function LoginSignUp(){
                 Lost Password? <span>Click Here!</span>
             </div>
             <div className='submit-container'>
-                <div className={action==="Login"? "submit gray" : "submit"} onClick={() => {setAction("Sign Up")}}>Sign Up</div>
-                <div className={action==="Sign Up"? "submit gray" : "submit"} onClick={() => {setAction("Login")}}>Login</div>
+                <div className="submit">Sign Up</div>
+                <div className="submit">Login</div>
             </div>
         </div>
     )
